@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World on a Budget</title>
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <script src="./JS/JavaScript.js"></script>
+</head>
+<body>
+  
+  <!-- NAV -->
+  <div class="wrap">
+    <div class="menu-container">
+      <ul class="menu">
+        <a href="#Home"><li>HOME</li></a>
+        <a href="#Itinerary"><li>ITINERARY</li></a>
+        <a href="#Contactus"><li>CONTACT US</li></a>
+      </ul>
+    </div>
+  </div>
+  <!-- NAV END -->
+
+  <!-- HOME -->
+  <div id="Home">
+    <div class="container">
+      <div class="text-center">
+        <span class="head-main">The world on a Budget</span>
+      </div>
+    </div>
+  </div>
+  <!-- END HOME -->
+
+  <!-- ITINERARY-->
+  <section id="Itinerary">
+    <div class="container">
+     <h1>Itinerary</h1>
+      <div class="flex-container">
+
+      <!--PHOTO CONTAINER 1 -->
+        <div class="photo-container">
+          <div class="photo">
+            <img src="./images/patagonia.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+             <h3>Patagonia</h3>
+          </div>
+        </div>
+
+        <!--PHOTO CONTAINER 2 -->
+        <div class="photo-container">
+          <div class="photo">
+            <img src="./images/laketiticaca.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+           
+              <h3>Lake Titicaca</h3>
+            
+          </div>
+        </div>
+        
+  
+          <!--PHOTO CONTAINER 3 -->
+        <div class="photo-container">
+          <div class="photo">
+            <img src="./images/sri-lanka-z.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+           
+              <h3>Sri-Lanka</h3>
+         
+          </div>
+        </div>
+        
+        <!--PHOTO CONTAINER 4 -->
+        <div class="photo-container">
+          <div class="photo">
+            <img src="./images/hawaii.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+           
+              <h3>Hawaii</h3>
+          
+          </div>
+        </div>
+        
+
+         <!--PHOTO CONTAINER 5 -->
+        <div class="photo-container">
+          <div class="photo">
+            <img src="./images/santorini.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+           
+              <h3>Santorini</h3>
+          
+          </div>
+        </div>
+
+         <!--PHOTO CONTAINER 6 -->
+         <div class="photo-container">
+          <div class="photo">
+            <img src="./images/noosa.png"onclick="openModal();currentSlide(6)" class="hover-shadow">
+            
+              <h3>Noosa</h3>
+           
+          </div>
+        </div>
+
+         <!--PHOTO CONTAINER 7 -->
+         <div class="photo-container">
+          <div class="photo">
+            <img src="./images/Whitesundays.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+           
+              <h3>Whitesundays</h3>
+         
+          </div>
+        </div>
+
+         <!--PHOTO CONTAINER 8 -->
+         <div class="photo-container">
+          <div class="photo">
+            <img src="./images/machupichu.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          
+              <h3>Machu Picchu</h3>
+         
+          </div>
+        </div>
+        
+        
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="./images/patagonia.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="./images/laketiticaca.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="./images/sri-lanka-z.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="./images/hawaii.png" style="width:100%">
+      </div>
+ 
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="./images/santorini.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="./images/noosa.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="./images/Whitesundays.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="./images/machupichu.png" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+    <div class="photo">
+        <img class="demo" src="./images/patagonia.png" onclick="currentSlide(1)" alt="Patagonia">
+      </div>
+  
+      <div class="photo">
+        <img class="demo" src="./images/laketiticaca.png" onclick="currentSlide(2)" alt="Laketiticaca">
+      </div>
+  
+      <div class="photo">
+        <img class="demo" src="./images/sri-lanka-z.png" onclick="currentSlide(3)" alt="Sri-Lanka">
+      </div>
+  
+      <div class="photo">
+        <img class="demo" src="./images/hawaii.png" onclick="currentSlide(4)" alt="Hawaii">
+      </div>
+
+      <div class="photo">
+        <img class="demo" src="./images/santorini.png" onclick="currentSlide(5)" alt="Santorini">
+      </div>
+
+      <div class="photo">
+        <img class="demo" src="./images/noosa.png" onclick="currentSlide(6)" alt="Noosa">
+      </div>
+
+      <div class="photo">
+        <img class="demo" src="./images/Whitesundays.png" onclick="currentSlide(7)" alt="Whitesundays">
+      </div>
+
+      <div class="photo">
+        <img class="demo" src="./images/machupichu.png" onclick="currentSlide(8)" alt="Machupichu">
+      </div>
+
+
+  </div>
+
+</div>
+</div>
+</section>
+
+                  <!--END ITINERARY-->
+                   <!--CONTACT-->
+<section id="contactus">
+  <div class="container">
+    <div class="heading-padding">
+      <h1 class="headding-padding">Contact us</h1>
+        <div class="message">
+          <h2><span>Your next adventure is just around the corner.</span>
+                </br>Drop your message!
+          </h2>
+          <p class="rsvp-test">
+             Please provide us with your basic contact information.
+          </p>
+          <div class="form-rsvp">
+            <form action="" method="post">
+              <input class="rsvp" type="text" value="" placeholder="First Name">
+              <input class="rsvp" type="text" value="" placeholder="Last Name">
+              <input class="rsvp" type="text" value="" placeholder="Email Address">
+              <input class="rsvp" type="text" value="" placeholder="Phone Number">
+              <div class="form-spacer">
+                <label class="terms">Terms and Conditions</label>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+       </div>
+
+        </div>
+    </div>
+</section>
+     <!--END CONTACT-->
+
+<!--FOOTER --->
+  <div id="footer">
+    www.worldonabudget.trip &nbsp;|&nbsp; &copy; 2021
+    </div>
+<!--END FOOTER-->
+
+
+</body>
+</html>
